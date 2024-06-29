@@ -14,7 +14,11 @@ const MessageForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
+<<<<<<< HEAD
         "https://medical-clinic-application-2.onrender.com/api/v1/message/send",
+=======
+        "https://medical-clinic-application-1.onrender.com/api/v1/message/send",
+>>>>>>> 5698111aafe7a94fc582e9c04d8a2b1dc77f1abd
         { firstName, lastName, phone, email, message },
         {
           withCredentials: true,

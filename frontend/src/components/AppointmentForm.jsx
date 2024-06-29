@@ -34,7 +34,11 @@ const AppointmentForm = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       const { data } = await axios.get(
+<<<<<<< HEAD
         "https://medical-clinic-application-2.onrender.com/api/v1/user/doctors",
+=======
+        "https://medical-clinic-application-1.onrender.com/api/v1/user/doctors",
+>>>>>>> 5698111aafe7a94fc582e9c04d8a2b1dc77f1abd
         { withCredentials: true }
       );
       setDoctors(data.doctors);
@@ -47,7 +51,11 @@ const AppointmentForm = () => {
     try {
       const hasVisitedBool = Boolean(hasVisited);
       const { data } = await axios.post(
+<<<<<<< HEAD
         "https://medical-clinic-application-2.onrender.com/api/v1/appointment/post",
+=======
+        "https://medical-clinic-application-1.onrender.com/api/v1/appointment/post",
+>>>>>>> 5698111aafe7a94fc582e9c04d8a2b1dc77f1abd
         {
           firstName,
           lastName,

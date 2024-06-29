@@ -16,6 +16,9 @@ import {
 const router = express.Router();
 
 router.post("/patient/register", patientRegister);
+router.get("/login", (req,res)=>{
+  res.json({success: true});
+});
 router.post("/login", login);
 router.post("/admin/addnew", isAdminAuthenticated, addNewAdmin);
 router.get("/doctors", getAllDoctors);
