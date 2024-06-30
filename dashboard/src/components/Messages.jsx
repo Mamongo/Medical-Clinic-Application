@@ -10,11 +10,7 @@ const Messages = () => {
     const fetchMessages = async () => {
       try {
         const { data } = await axios.get(
-<<<<<<< HEAD
-          "https://medical-clinic-application-2.onrender.com/api/v1/message/getall",
-=======
-          "/api/v1/message/getall",
->>>>>>> 5698111aafe7a94fc582e9c04d8a2b1dc77f1abd
+          "https://medical-clinic-application-1.onrender.com/api/v1/message/getall",
           { withCredentials: true }
         );
         setMessages(data.messages);

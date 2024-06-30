@@ -11,11 +11,7 @@ const Doctors = () => {
     const fetchDoctors = async () => {
       try {
         const { data } = await axios.get(
-<<<<<<< HEAD
-          "https://medical-clinic-application-2.onrender.com/api/v1/user/doctors",
-=======
-          "/api/v1/user/doctors",
->>>>>>> 5698111aafe7a94fc582e9c04d8a2b1dc77f1abd
+          "https://medical-clinic-application-1.onrender.com/api/v1/user/doctors",
           { withCredentials: true }
         );
         setDoctors(data.doctors);
