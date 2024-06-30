@@ -18,7 +18,14 @@ app.use(cors({
     credentials: true,
 }));
 
-app.options('*', cors());
+const corsOptions = {
+  origin: 'https://6680a26de36167717b13f95d--dulcet-churros-9aeffe.netlify.app',
+  methods: 'GET,POST,PUT,DELETE,OPTIONS',
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
