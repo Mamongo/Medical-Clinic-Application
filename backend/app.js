@@ -13,9 +13,10 @@ const app = express();
 config({ path: "./config/config.env" });
 
 app.use(cors({
-    origin: [process.env.FRONTEND_URL, process.env.DASHBOARD_URL, process.env.NETLIFY_FRONTEND_URL],
+    origin: [process.env.FRONTEND_URL, process.env.DASHBOARD_URL, process.env.NETLIFY_FRONTEND_URL, process.env.NETLIFY_DASHBOARD_URL],
     method: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"],
 }));
 
 app.use(cookieParser());
@@ -36,5 +37,14 @@ app.use("/api/v1/appointment", appointmentRouter);
 dbConnection();
 
 app.use(errorMiddleware);
+
+app.use((req, res, next) => {
+  res.cookie('name', 'value', {
+      secure: true, 
+      httpOnly: true, 
+      sameSite: 'None',
+  });
+  next();
+});
 
 export default app;
