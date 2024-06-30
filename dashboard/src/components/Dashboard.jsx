@@ -16,7 +16,7 @@ const Dashboard = () => {
 <<<<<<< HEAD
           "https://medical-clinic-application-2.onrender.com/api/v1/appointment/getall",
 =======
-          "https://medical-clinic-application-1.onrender.com/api/v1/appointment/getall",
+          "/api/v1/appointment/getall",
 >>>>>>> 5698111aafe7a94fc582e9c04d8a2b1dc77f1abd
           { withCredentials: true }
         );
@@ -34,7 +34,7 @@ const Dashboard = () => {
 <<<<<<< HEAD
         `https://medical-clinic-application-2.onrender.com/api/v1/appointment/update/${appointmentId}`,
 =======
-        `https://medical-clinic-application-1.onrender.com/api/v1/appointment/update/${appointmentId}`,
+        `/api/v1/appointment/update/${appointmentId}`,
 >>>>>>> 5698111aafe7a94fc582e9c04d8a2b1dc77f1abd
         { status },
         { withCredentials: true }

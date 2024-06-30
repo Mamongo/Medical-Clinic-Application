@@ -11,11 +11,7 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     await axios
-<<<<<<< HEAD
       .get("https://medical-clinic-application-2.onrender.com/api/v1/user/patient/logout", {
-=======
-      .get("https://medical-clinic-application-1.onrender.com/api/v1/user/patient/logout", {
->>>>>>> 5698111aafe7a94fc582e9c04d8a2b1dc77f1abd
         withCredentials: true,
       })
       .then((res) => {

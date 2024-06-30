@@ -26,7 +26,7 @@ const AddNewAdmin = () => {
 <<<<<<< HEAD
           "https://medical-clinic-application-2.onrender.com/api/v1/user/admin/addnew",
 =======
-          "https://medical-clinic-application-1.onrender.com/api/v1/user/admin/addnew",
+          "/api/v1/user/admin/addnew",
 >>>>>>> 5698111aafe7a94fc582e9c04d8a2b1dc77f1abd
           { firstName, lastName, email, phone, nic, dob, gender, password },
           {

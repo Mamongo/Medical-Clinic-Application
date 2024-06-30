@@ -61,7 +61,7 @@ const AddNewDoctor = () => {
 <<<<<<< HEAD
         .post("https://medical-clinic-application-2.onrender.com/api/v1/user/doctor/addnew", formData, {
 =======
-        .post("https://medical-clinic-application-1.onrender.com/api/v1/user/doctor/addnew", formData, {
+        .post("/api/v1/user/doctor/addnew", formData, {
 >>>>>>> 5698111aafe7a94fc582e9c04d8a2b1dc77f1abd
           withCredentials: true,
           headers: { "Content-Type": "multipart/form-data" },
